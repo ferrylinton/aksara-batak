@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{{setVar 'rdm' (random 1000000000 9999999999)}}
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>blog</title>
+  <link rel="icon" href="/favicon.ico?{{rdm}}" type="image/ico">
+  <link rel="stylesheet" href="/assets/css/all.css?{{rdm}}" />
+</head>
+
+<body>
+  <div class="body-bg"></div>
+  {{> navbar}}
+  {{{content}}}
+  {{> footer}}
+  <script src="/assets/js/all.js?{{rdm}}"></script>
+</body>
+
+</html>

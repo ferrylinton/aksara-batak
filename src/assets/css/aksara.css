@@ -1,0 +1,123 @@
+#home,
+#aksara {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 80px 10px 50px 10px;
+}
+
+#aksara-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#aksara-form .buttons {
+  margin: 20px 0;
+}
+
+#aksara-input {
+  width: 100%;
+  min-height: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--flh-color);
+  background-color: hsl(from var(--flh-secondary) h s calc(l + 4));
+  border: solid 1px hsl(from var(--flh-secondary) h s calc(l - 10));
+}
+
+#aksara-input:focus {
+  outline: 4px solid hsla(209, 63%, 44%, 0.169);
+}
+
+#aksara-output {
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: hsl(from var(--flh-secondary) h s calc(l + 4));
+  border: solid 1px hsl(from var(--flh-secondary) h s calc(l - 10));
+}
+
+.aksara-line {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  min-height: 20px;
+}
+
+.aksara-box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px 2px 0;
+}
+
+.aksara-glyph {
+  font-family: Batak;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #be2626;
+}
+
+.aksara-glyph::before {
+  content: var(--content, '');
+}
+
+.aksara-text {
+  letter-spacing: 2px;
+  margin-top: -5px;
+  font-size: .9rem;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+#aksara {
+  gap: 10px;
+}
+
+#aksara .container {
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: normal;
+  border: solid 1px hsl(from var(--flh-secondary) h s calc(l - 10));
+}
+
+#aksara .container h1 {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#ina-nisurat,
+#anak-nisurat {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#aksara .aksara-box {
+  border-radius: 4px;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  height: 60px;
+  border: solid 1px hsl(from var(--flh-secondary) h s calc(l - 10));
+}
+
+#aksara .aksara-text {
+  margin: 0;
+  letter-spacing: 0;
+}
+
+#aksara .aksara-glyph {
+  font-size: 1.6rem;
+}

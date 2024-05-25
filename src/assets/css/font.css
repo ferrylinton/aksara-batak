@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Shadows+Into+Light&display=swap');
+
+@font-face {
+    font-family: "Batak";
+    src: local("Batak"), url(../fonts/BATAKTOBA1.1.ttf) format("truetype");
+}

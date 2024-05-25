@@ -1,0 +1,86 @@
+:root {
+    --flh-primary: #0d6dfd;
+    --flh-secondary: #eeeeee;
+    --flh-bg: #ffffff;
+    --flh-color: #373a3c;
+    --flh-color-inv: #ffffff;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    color: var(--flh-color);
+    background-color: var(--flh-bg);
+}
+
+a {
+    color: var(--flh-color);
+    text-decoration: none;
+}
+
+.body-bg {
+    width: 100%;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+.btn {
+    min-width: 120px;
+    height: 40px;
+    border: solid 1px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0ms;
+}
+
+.btn {
+    color: hsl(from var(--flh-color) h s calc(l + 20));
+    background-color: var(--flh-secondary);
+    border-color: hsl(from var(--flh-secondary) h s calc(l - 10));
+}
+
+.btn:hover {
+    color: var(--flh-color);
+    background-color: hsl(from var(--flh-secondary) h s calc(l - 10));
+    border-color: hsl(from var(--flh-secondary) h s calc(l - 20));
+}
+
+.btn-primary {
+    color: hsl(from var(--flh-primary) h l 90);
+    background-color: var(--flh-primary);
+    border-color: hsl(from var(--flh-primary) h s calc(l - 10));
+}
+
+.btn-primary:hover {
+    color: var(--flh-color-inv);
+    background-color: hsl(from var(--flh-primary) h s calc(l - 10));
+    border-color: hsl(from var(--flh-primary) h s calc(l - 20));
+}
+
+.page {
+    width: 100%;
+    max-width: 1024px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0 30px 0;
+}
+
+.footer {
+    flex: none;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: hsl(from var(--flh-secondary) h s calc(l + 4));
+    border-top: solid 1px hsl(from var(--flh-secondary) h s calc(l - 10));
+}

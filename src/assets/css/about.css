@@ -1,0 +1,69 @@
+#about {
+    flex-direction: column;
+    gap: 20px;
+}
+
+#about .brand {
+    font-family: "Shadows Into Light", cursive;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+#about .framework, #about .font{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#about .framework h4, #about .font h4{
+    display: block;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+#about .framework .list{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+#about .framework .list a{
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: solid 1px hsl(from var(--flh-secondary) h s calc(l + 10));
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.handlebars{
+    background-color: #F0772B;
+    color: #434343;
+}
+
+.eleventy{
+    background-color: #222222;
+    color: #fff;
+}
+
+#about .framework .list a img{
+    height: 120px;
+}
+ 
+#about .font a{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#about .font a span{
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+}

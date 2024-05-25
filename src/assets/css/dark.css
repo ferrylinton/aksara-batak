@@ -1,0 +1,36 @@
+.dark{
+    --flh-primary: #403e3e;
+    --flh-secondary: #5d5d5f;
+    --flh-bg: #18191a;
+    --flh-color: #ffffff;
+    --flh-color-inv: #333435;
+}
+
+.dark .nav .container {
+    box-shadow: 0px 0px 45px -12px hsl(212, 98%, 52%);
+    border-color: hsl(from var(--flh-secondary) h s calc(l + 10));
+}
+
+.dark .navbar-menu {
+    box-shadow: 0px 0px 45px -12px hsl(212, 98%, 52%);
+    border-color: hsl(from var(--flh-secondary) h s calc(l + 10));
+}
+
+.dark .footer {
+    background-color: hsl(from var(--flh-bg) h s calc(l - 3));
+    border-top: solid 1px hsl(from var(--flh-bg) h s calc(l + 10));
+}
+
+.dark .aksara-glyph{
+    text-shadow: 1px 1px #18191a;
+}
+
+.dark #author img {
+    border: solid 2px hsl(from var(--flh-secondary) h s calc(l + 20));
+    box-shadow: hsla(212, 98%, 52%, 0.07) 0px 1px 2px, hsla(212, 98%, 52%, 0.07) 0px 2px 4px, hsla(212, 98%, 52%, 0.07) 0px 4px 8px, hsla(212, 98%, 52%, 0.07) 0px 8px 16px, hsla(212, 98%, 52%, 0.07) 0px 16px 32px, hsla(212, 98%, 52%, 0.07) 0px 32px 64px;
+}
+
+.dark #about .framework .list a{
+    border: solid 1px hsl(from var(--flh-secondary) h s calc(l + 10));
+    box-shadow: hsla(212, 98%, 52%, 0.1) 0px 20px 25px -5px, hsla(212, 98%, 52%, 0.04) 0px 10px 10px -5px;
+}

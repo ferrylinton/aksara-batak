@@ -1,0 +1,74 @@
+#author {
+    flex-direction: column;
+    gap: 20px;
+}
+
+#author img {
+    width: 17rem;
+    height: 17rem;
+    border: solid 1px #ddd;
+    padding: 2px;
+    
+    border-radius: 500px;
+    background-color: var(--flh-bg);
+    border-color: hsl(from var(--flh-secondary) h s calc(l + 10));
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#author .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#author h1 {
+    line-height: 1;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#author h2 {
+    line-height: 1;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#author h3 {
+    line-height: 1;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+#author button {
+    border: none;
+    background-color: transparent;
+    color: var(--flh-color);
+    line-height: 1;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+@media (min-width: 768px) {
+
+
+    #author {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    #author img {
+        width: 23rem;
+        height: 23rem;
+    }
+
+    #author .content {
+        gap: 25px;
+    }
+
+    #author button {
+        font-size: 1.2rem;
+    }
+}
